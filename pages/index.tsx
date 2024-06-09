@@ -8,7 +8,7 @@ interface indexItem {
 }
 
 const Index: FC<indexItem> = ({ coins }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [searhCoins, setSearchCoins] = useState(coins);
 
   const handlerChange = (e: ChangeEvent<HTMLInputElement>) => {
