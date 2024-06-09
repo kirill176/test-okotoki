@@ -1,0 +1,149 @@
+@import url("./nullstyle.css");
+
+html,
+body {
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #0d1117;
+  position: relative;
+}
+
+.header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-left: 15px;
+}
+
+.coins {
+  display: flex;
+}
+
+.coins p {
+  padding: 0 10px;
+}
+
+.coins::before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.coins::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+
+.search {
+  position: relative;
+}
+
+.search__button {
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.search__button img {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 10px;
+}
+
+.list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.list__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px 15px 0 0;
+}
+
+.list__input img {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 10px;
+}
+
+.list__input input {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  width: 100%;
+}
+
+.list__categories {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
+
+.list__categories span {
+  display: flex;
+  align-items: center;
+}
+
+.list__categories span img {
+  max-width: 15px;
+  max-height: 15px;
+}
+
+.list__categories h6 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.list__items {
+  max-height: 500px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.list__items::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.coin img {
+  max-width: 15px;
+  margin-right: 10px;
+}
